@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>products</h2>
+        <span>Content main</span>
     </div>
 </template>
 
@@ -10,6 +10,14 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+    div{
+        background-color: black;
+        color: white;
+        height:90px;
+        text-align: center;
+        span{
+            line-height: 90px;
+        }
+    }
 </style>

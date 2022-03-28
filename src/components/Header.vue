@@ -87,13 +87,11 @@ export default {
 <style lang="scss" scoped>
     div{
         nav{
-            background-color: lightblue;
             display: flex;
             justify-content: space-around;
             align-items: center;
             img{
                 width: 80px;
-                height: 80px;
                 vertical-align: super;
                 padding: 20px 0;
             }
