@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav>
+        <nav class="my-container">
             <img src="../assets/img/dc-logo.png" alt="">
             <ul>
                 <li v-for="(element, index) in headerNav" :key="index" @click="setActiveElement(index)">
@@ -88,7 +88,7 @@ export default {
     div{
         nav{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             img{
                 width: 80px;

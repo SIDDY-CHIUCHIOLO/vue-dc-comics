@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: "IndexProdicts"
+    name: "IndexMain"
 }
 </script>
 
