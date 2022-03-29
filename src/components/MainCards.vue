@@ -1,20 +1,33 @@
 <template>
-    <div>
-        <!-- <div class="contain-cards" v-for="(element, index) in cardsSeries" :key="index">
-            <div class="contain-img">
-                <img :src="element.thumb" :alt="element.series">
-            </div>
-            <h4>{{element.series}}</h4>
-        </div> -->
+    <div class="contain-cards">
+        <div class="contain-img">
+            <img :src="imageThumb" :alt="imageSeries">
+        </div>
+        <h4>{{imageSeries}}</h4>
     </div>
 </template>
 
 <script>
 export default {
-    name: "MainCards"
+    name: "MainCards",
+    props:['imageThumb', 'imagePrice', 'imageSeries', 'imageType']
 }
 </script>
 
 <style lang="scss" scoped>
-
+    .contain-cards{
+        color:white;
+        width: calc(84% / 6);
+        margin:0 1%;
+        margin-top: 40px;
+        .contain-img{
+            width: 100%;
+            height: 160px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            img{
+                width: 100%;    
+            }
+        }
+    }
 </style>

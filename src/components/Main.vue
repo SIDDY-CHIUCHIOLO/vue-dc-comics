@@ -1,15 +1,16 @@
 <template>
     <div>
         <MainJumbotron/>
-        <MainCards/>
         <div id="my-container-cards">
             <div class="my-container warpper-cards">
-                <div class="contain-cards" v-for="(element, index) in cardsSeries" :key="index">
-                    <div class="contain-img">
-                        <img :src="element.thumb" :alt="element.series">
-                    </div>
-                    <h4>{{element.series}}</h4>
-                </div>
+                <MainCards
+                    v-for="(element, index) in cardsSeries"
+                    :key="index"
+                    :imageThumb="element.thumb"
+                    :imagePrice="element.price"
+                    :imageSeries="element.series"
+                    :imageType="element.type"
+                />
                 <button>LOAD MORE</button>
             </div>
         </div>
@@ -107,7 +108,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     div{
         #my-container-cards{
             background-color: black;
@@ -115,21 +116,6 @@ export default {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                .contain-cards{
-                    color:white;
-                    width: calc(84% / 6);
-                    margin:0 1%;
-                    margin-top: 40px;
-                    .contain-img{
-                        width: 100%;
-                        height: 160px;
-                        overflow: hidden;
-                        margin-bottom: 20px;
-                        img{
-                            width: 100%;    
-                        }
-                    }
-                }
                 button{
                     border: none;
                     color: white;
