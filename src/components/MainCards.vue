@@ -1,8 +1,11 @@
 <template>
     <div>
-        <div id="contain-cards" class="my-container">
-
-        </div>
+        <!-- <div class="contain-cards" v-for="(element, index) in cardsSeries" :key="index">
+            <div class="contain-img">
+                <img :src="element.thumb" :alt="element.series">
+            </div>
+            <h4>{{element.series}}</h4>
+        </div> -->
     </div>
 </template>
 
@@ -13,12 +16,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    div{
-        background-color: black;
-        height: 450px;
-        #contain-cards{
-            background-color: #fff;
-            height: 100%;
-        }
-    }
+
 </style>
