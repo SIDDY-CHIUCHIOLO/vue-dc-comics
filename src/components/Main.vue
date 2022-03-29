@@ -14,17 +14,21 @@
                 <button>LOAD MORE</button>
             </div>
         </div>
+        <MainNav/>
     </div>
 </template>
 
 <script>
 import MainJumbotron from './MainJumbotron.vue';
 import MainCards from './MainCards.vue'
+import MainNav from './MainNav.vue'
+
 
 export default {
     components:{
         MainJumbotron,
-        MainCards
+        MainCards,
+        MainNav
     },
     name: "IndexMain",
     data: function(){

@@ -30,7 +30,8 @@
                         </li>
                     </ul>
                 </nav>
-                <img src="../assets/img/dc-logo-bg.png" alt="">
+                <div class="my-container-img">
+                </div>
             </div>
         </div>
 
@@ -207,6 +208,14 @@ export default {
                             }
                         }
                     }
+                }
+                .my-container-img{
+                    width: 45%;
+                    height: 100%;
+                    background-image: url("../assets/img/dc-logo-bg.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
                 }
             }
         }
